@@ -33,6 +33,7 @@
             textBox2 = new TextBox();
             label1 = new Label();
             button1 = new Button();
+            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // panel1
@@ -87,12 +88,26 @@
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.LightGray;
-            button1.Location = new Point(285, 249);
+            button1.Location = new Point(285, 243);
             button1.Name = "button1";
             button1.Size = new Size(408, 40);
             button1.TabIndex = 4;
             button1.Text = "ACCEDER";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.FromArgb(0, 122, 204);
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.DimGray;
+            linkLabel1.Location = new Point(458, 304);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(179, 17);
+            linkLabel1.TabIndex = 5;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "¿Olvidaste tu contraseña?";
             // 
             // Form1
             // 
@@ -100,6 +115,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
             ClientSize = new Size(780, 330);
+            Controls.Add(linkLabel1);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -121,5 +137,6 @@
         private TextBox textBox2;
         private Label label1;
         private Button button1;
+        private LinkLabel linkLabel1;
     }
 }
