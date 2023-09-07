@@ -173,6 +173,7 @@
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            MouseDown += Form1_MouseDown;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)btncerrar).EndInit();
