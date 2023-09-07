@@ -47,12 +47,24 @@ namespace login
 
         private void txtpass_Leave(object sender, EventArgs e)
         {
-            if(txtpass.Text == ""){
+            if (txtpass.Text == "")
+            {
                 txtpass.Text = "CONTRASEÑA";
                 txtpass.ForeColor = Color.DimGray;
                 txtpass.UseSystemPasswordChar = false;
 
             }
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
         }
     }
 }

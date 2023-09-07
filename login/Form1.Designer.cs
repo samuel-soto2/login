@@ -141,6 +141,7 @@
             btncerrar.SizeMode = PictureBoxSizeMode.Zoom;
             btncerrar.TabIndex = 6;
             btncerrar.TabStop = false;
+            btncerrar.Click += btncerrar_Click;
             // 
             // btnminimizar
             // 
@@ -151,6 +152,7 @@
             btnminimizar.SizeMode = PictureBoxSizeMode.Zoom;
             btnminimizar.TabIndex = 7;
             btnminimizar.TabStop = false;
+            btnminimizar.Click += btnminimizar_Click;
             // 
             // Form1
             // 
