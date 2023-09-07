@@ -37,7 +37,22 @@ namespace login
 
         private void txtpass_Enter(object sender, EventArgs e)
         {
+            if (txtpass.Text == "CONTRASEÑA")
+            {
+                txtpass.Text = "";
+                txtpass.ForeColor = Color.LightGray;
+                txtpass.UseSystemPasswordChar = true;
+            }
+        }
 
+        private void txtpass_Leave(object sender, EventArgs e)
+        {
+            if(txtpass.Text == ""){
+                txtpass.Text = "CONTRASEÑA";
+                txtpass.ForeColor = Color.DimGray;
+                txtpass.UseSystemPasswordChar = false;
+
+            }
         }
     }
 }

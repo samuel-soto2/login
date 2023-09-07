@@ -90,6 +90,7 @@
             txtpass.TabIndex = 2;
             txtpass.Text = "CONTRASEÑA";
             txtpass.Enter += txtpass_Enter;
+            txtpass.Leave += txtpass_Leave;
             // 
             // label1
             // 
