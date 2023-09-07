@@ -14,20 +14,7 @@ namespace login
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-        [DllImport("user32.DLL", EntryPoint = "ReleseCapture")]
-        private extern static void RealeseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.intPtr hwnd, int wmsg, int wparam, int lparam);
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        public Form1() => InitializeComponent();
 
         private void txtuser_Enter(object sender, EventArgs e)
         {
@@ -46,8 +33,6 @@ namespace login
             {
                 txtuser.Text = " USUARIO";
                 txtuser.ForeColor = Color.DimGray;
-
-
 
             }
         }
@@ -84,10 +69,11 @@ namespace login
 
         }
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            RealeseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+        
+        
+
+
+
     }
 }
+
