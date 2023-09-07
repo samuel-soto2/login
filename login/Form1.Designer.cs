@@ -114,7 +114,7 @@
             btnlogin.Location = new Point(285, 243);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(408, 40);
-            btnlogin.TabIndex = 4;
+            btnlogin.TabIndex = 3;
             btnlogin.Text = "ACCEDER";
             btnlogin.UseVisualStyleBackColor = false;
             btnlogin.Click += button1_Click;
@@ -128,7 +128,7 @@
             linkpass.Location = new Point(410, 304);
             linkpass.Name = "linkpass";
             linkpass.Size = new Size(179, 17);
-            linkpass.TabIndex = 5;
+            linkpass.TabIndex = 0;
             linkpass.TabStop = true;
             linkpass.Text = "¿Olvidaste tu contraseña?";
             // 
